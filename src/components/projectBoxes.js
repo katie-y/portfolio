@@ -35,7 +35,7 @@ class ProjectBox extends Component {
                 return <div className='slide-boxes-container'>
                 <div className='arrows-and-box'>
                     <MdKeyboardArrowLeft id='slide-arrow-left' onClick={this.previous} />
-                    <a href={this.state.projects[i].link} className="single-box" id={"single-" + this.state.projects[i].idname}><img src={this.state.projects[i].image} /><div id='single-box-content' >{this.state.projects[i].name}{this.state.projects[i].icon}</div></a>
+                    <a href={this.state.projects[i].link} className="single-box" id={"single-" + this.state.projects[i].idname}><img src={this.state.projects[i].image} alt="" /><div id='single-box-content' >{this.state.projects[i].name}{this.state.projects[i].icon}</div></a>
                     <MdKeyboardArrowRight id='slide-arrow-right' onClick={this.next} />
                     </div>
                 </div>
@@ -50,16 +50,15 @@ class ProjectBox extends Component {
                 return <div className="all-boxes">{allSlides}</div>
             }
         }
-
         return (
             <div>
             <div id='project-filters'>
-                <TiThSmall className='filter' onClick={this.showAllToggle} />
-                <FaJs className='filter'/>
-                <FaReact className='filter'/>
-                <FaNodeJs className='filter'/>
-                <FaCss3 className='filter'/>
-                <FaHtml5 className='filter'/>
+                <TiThSmall className="filter" id='all-filter' onClick={this.showAllToggle} />
+                <FaJs className="filter" id="JS-filter" />
+                <FaReact className='filter' id="react-filter"/>
+                <FaNodeJs className='filter' id="node-filter"/>
+                <FaCss3 className='filter' id="css-filter" />
+                <FaHtml5 className='filter' id="html-filter"/>
                 </div>
                 {slides()}
                 {showAllSlides()}

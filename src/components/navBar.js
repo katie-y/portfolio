@@ -10,7 +10,7 @@ class NavBar extends Component {
                 <div id='nav-bar-katie'><small id='nav-katie-box'>KY</small>
                 </div>
                     <div className='nav-bar-items'>
-                <a className='nav-item' >
+                <a href="#home-jump-to" className='nav-item' >
                     <p id="nav-text">Home</p>
                     <FaHome id='nav-icon' />
                 </a>

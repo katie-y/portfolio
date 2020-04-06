@@ -16,11 +16,12 @@ class App extends Component {
     return (
 
       <div className="App">
+      <div id="home-jump-to"></div>
           <NavBar />
           <Home />
           <div className='sticky-hi'>
             <small id='small-hi'>Hi!</small>
-            <img id="left-img" src={LeftPic} />
+            <img id="left-img" src={LeftPic} alt="" />
             </div>
           <About />
           <Projects />

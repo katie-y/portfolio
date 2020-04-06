@@ -1,5 +1,4 @@
 import React from 'react';
-import {MdRoom} from 'react-icons/md'
 import ContactForm from './contactForm';
 
 const Contact = () => {
