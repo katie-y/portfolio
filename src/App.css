@@ -211,9 +211,9 @@ margin-bottom: 0;
 #small-hi{
   background-color: black;
   text-align: center;
-  width: 4.5vw;
-  height: 4.5vw;
-  font-size: 4vw;
+  width: 7vw;
+  height: 7vw;
+  font-size: 6vw;
 }
 #left-img {
   position: absolute;
@@ -322,7 +322,7 @@ margin-bottom: 0;
 .arrows-and-box {
   position: absolute;
   width: 100vw;
-  height: 72vh;
+  height: 70vh;
   background-color: lightblue;
   z-index: 0;
   overflow: hidden;
@@ -332,6 +332,7 @@ margin-bottom: 0;
   height: 72vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
+  font-family: 'Bebas Neue', cursive;
 }
 
 #single-box1 #single-box-content {
@@ -339,16 +340,53 @@ margin-bottom: 0;
   position: absolute;
   right: 0;
   top: 5vh;
-  font-family: 'Bebas Neue', cursive;
   color: white;
   font-size: 8vh;
 }
+#single-box1 img {
+  opacity: 0.4;
+}
 #single-box2 #single-box-content {
   position: absolute;
-  bottom: 0;
-  font-family: 'Bebas Neue', cursive;
+  bottom: 5vh;
+  text-align: center;
   color: white;
   font-size: 10vh;
+}
+#single-box2 img {
+  opacity: 0.6;
+}
+#single-box3 #single-box-content {
+  margin: 0;
+  transform: rotate(-90deg);
+  font-size: 13vh;
+  position: absolute;
+  top: 24vh;
+  left: -26vw;
+  color: rgb(120, 178, 198);
+}
+#single-box3 img {
+  width: 145vw;
+  height: auto;
+  opacity: 0.3;
+}
+#single-box4 #single-box-content {
+  display: flex;
+  flex-direction: column;
+  color: #563F65;
+  opacity: 0.9;
+  font-size: 13vh;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+#single-box4 img {
+  width: 107vw;
+  height: auto;
+  opacity: 1;
+  filter: blur(2px);
 }
 #slide-arrow-left{
   font-size: 3em;
@@ -376,12 +414,7 @@ margin-bottom: 0;
   position: absolute;
   z-index: -1;
 }
-#single-box1 img {
-  opacity: 0.4;
-}
-#single-box2 img {
-  opacity: 0.6;
-}
+
 
 
 
@@ -398,7 +431,6 @@ margin-bottom: 0;
   width: 100vw;
   background-color: black;
   align-items: center;
-  justify-content: center;
 }
 .nav-bar-items {
   display: flex;
@@ -430,7 +462,7 @@ margin-bottom: 0;
   position: absolute;
   top: 35%;
   left: 30%;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 .nav-item:hover #nav-icon {
@@ -530,6 +562,7 @@ margin-bottom: 0;
 }
 
 #footer-icon {
+  font-size: 4vh;
   color: darkgray;
 }
 

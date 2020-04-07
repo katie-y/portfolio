@@ -4,14 +4,16 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import { TiThSmall } from 'react-icons/ti';
 import TwoDiceGame from '../2dicegame.png'
 import Nasa from '../nasa.png';
+import Cyberpet from '../cyberpet.png';
+import SlackApp from '../slackapp.png';
 
 class ProjectBox extends Component {
     state = {
         projects: [
             { idname: "box1", name: "Two player dice game", icon: <FaJs />, image: TwoDiceGame,link:  'https://katie-y.github.io/twoplayerdicegame/' },
             { idname: "box2", name: "NASA Photo a day API", icon: <FaReact />, image: Nasa },
-            { idname: "box3", name: "Project 3", icon: <FaNodeJs /> },
-            { idname: "box4", name: "Project 4", icon: <FaCss3 /> },
+            { idname: "box3", name: "Cyberpet", icon: <FaNodeJs />, image: Cyberpet },
+            { idname: "box4", name: "Slack Clone", icon: <FaCss3 />, image: SlackApp },
             { idname: "box5", name: "Project 5", icon: <FaHtml5 /> },
         ],
         show: 0,

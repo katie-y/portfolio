@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { FaJs, FaReact, FaNodeJs, FaCss3, FaHtml5 } from "react-icons/fa";
 import {MdKeyboardArrowRight} from 'react-icons/md';
 import CNlogo from '../cn-logo.svg';
