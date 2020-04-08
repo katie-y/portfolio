@@ -1,14 +1,12 @@
 import React from 'react';
 
 const ContactForm = () => {
-    return <form className = 'contact-form' action='mailto:katie_york@hotmail.co.uk?subject=Email%20from%20portfolio' method='post'>
-    <input id='msg-box' placeholder='Send me a message...' />
-    <input id='email-box' placeholder='Your email address' />
+    return <form className = 'contact-form' action='https://formspree.io/moqnwllv' method='post' target="_blank" rel="noopener noreferrer">
+    <textarea id="msg-box" type="text"  name="message" placeholder='Send me a message...' required/>
+    <input id='email-box' name="email" placeholder='Your email address' required />
     <input id='send-btn' type="submit" value="Send" />
     </form>
 }
-
-// use formspree for backend?
 
 
 export default ContactForm;

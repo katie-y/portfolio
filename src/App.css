@@ -335,6 +335,10 @@ margin-bottom: 0;
   font-family: 'Bebas Neue', cursive;
 }
 
+.carousel-item a {  /* so the is on top and works */
+  z-index: 1;
+}
+
 #single-box1 #single-box-content {
   width: 55vw;
   position: absolute;
@@ -401,12 +405,14 @@ margin-bottom: 0;
   position: absolute;
   top: 50%;
   right: 0;
+  z-index: 1;
   color: white;
   transition: 0.6s ease;
 }
 #slide-arrow-right:hover, #slide-arrow-left:hover{
   background-color: rgba(0,0,0,0.8);
   opacity: 0.5;
+
 }
 
 .single-box img { /* images for background */
@@ -415,9 +421,37 @@ margin-bottom: 0;
   z-index: -1;
 }
 
+/* carousel transitions */
+.carousel-item{
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
 
+[id^="item"] {
+    display: none;
+  }
 
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+}
 
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3,
+#item-4:target ~ .item-4
+{
+    z-index: 3;
+    opacity: 1;
+  }
+
+/* end carousel  */
 
 
 /* nav bar */
@@ -504,7 +538,8 @@ margin-bottom: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(141, 227, 217);
   text-align: center;
-  height: 5vh
+  height: 5vh;
+  font-size: 3vh;
 }
 .contact-form {
   display: flex;
@@ -514,12 +549,16 @@ margin-bottom: 0;
   align-items: center;
 }
 #msg-box{
-  width: 100%;
-  height: 40vh;
+  padding: 1vh;
+  background-color: white;
+  width: 68vw;
+  height: 38vh;
   border: solid black 2vw;
   box-shadow: rgb(141, 227, 217) 1vw 1vw;
   border-radius: 1vw;
-  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  font-weight: bolder;
 }
 #email-box{
   margin-top: 2vw;
@@ -530,7 +569,9 @@ margin-bottom: 0;
   box-shadow: rgb(141, 227, 217) 1vw 1vw;
   border-radius: 1vw;
   text-align: center;
-  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  font-weight: bolder;
 }
 #send-btn {
   font-family: 'Bebas Neue', cursive;
@@ -558,7 +599,10 @@ margin-bottom: 0;
 .footer-icon-box{
   display: flex;
   width: 100vw;
+  height: 100%;
   justify-content: space-around;
+  margin: 0;
+  align-items: center;
 }
 
 #footer-icon {
@@ -738,3 +782,9 @@ font-size: 1.5vw;
 
 /* tablet break point */
 /* @media screen and (min-device-width: 400px) */
+
+
+/* test */
+
+
+
