@@ -412,9 +412,10 @@ margin-bottom: 0;
 #slide-arrow-right:hover, #slide-arrow-left:hover{
   background-color: rgba(0,0,0,0.8);
   opacity: 0.5;
-
 }
-
+.item-4 #slide-arrow-right, .item-4 #slide-arrow-left{
+  color: #563F65;
+}
 .single-box img { /* images for background */
   height: 72vh;
   position: absolute;

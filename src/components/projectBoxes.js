@@ -148,8 +148,8 @@ class ProjectBox extends Component {
                         <img src={this.state.projects[3].image} alt="" />
                         <div id='single-box-content' >{this.state.projects[3].name}{this.state.projects[3].icon}</div>
                     </a>
-                    <a href="#item-3"><MdKeyboardArrowLeft id='slide-arrow-left' /> </a>
-                    <a href="#item-1"><MdKeyboardArrowRight id='slide-arrow-right' /></a>
+                    <a href="#item-3"><MdKeyboardArrowLeft id='slide-arrow-left'/></a>
+                    <a href="#item-1"><MdKeyboardArrowRight id='slide-arrow-right'/></a>
                 </div>
             </div>
         </div>
